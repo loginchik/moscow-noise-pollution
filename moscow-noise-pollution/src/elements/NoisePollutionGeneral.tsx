@@ -3,104 +3,114 @@ const NoisePollutionGeneralContainer = () => {
         <div>
             <h2>Noise threats</h2>
             <p>
-                Unlike air or water pollution, noise pollution is invisible and in many cases is not even recognized
-                as pollution. Sounds of urban nature are often taken for granted: without cars there would be no
-                transportation possible, without construction sites there would be no place for living, without
-                airports and planes many global processes and international cooperation would be impossible.
-                These sounds may considered as a price that townspeople pay to use the benefits of city life.
+                Unlike air or&nbsp;water pollution, noise pollution is&nbsp;invisible and in&nbsp;many cases is&nbsp;not&nbsp;even recognized
+                as&nbsp;pollution. Sounds of&nbsp;urban nature are&nbsp;often taken&nbsp;for&nbsp;granted: without&nbsp;cars there would&nbsp;be
+                no&nbsp;transportation possible, without&nbsp;construction sites there would&nbsp;be no&nbsp;place for&nbsp;living,
+                without&nbsp;airports and planes many&nbsp;global processes and international cooperation would&nbsp;be impossible.
+                These sounds may&nbsp;be&nbsp;considered as&nbsp;a&nbsp;price that townspeople pay&nbsp;to&nbsp;use the&nbsp;benefits of&nbsp;city life.
             </p>
             <p>
-                Again, noise pollution is considered to be any unwanted or disturbing sound that affects physical
-                or mental well-being of a person. Not every sound is polluting, as noise has a  psychological component
-                — circumstances that make a sound unwanted. Negative mental effect, which
-                noise has, originates from person’s perception of what is being listened and their attitude to the
-                disturbing element of a nature. For instance, people at a rock concert do not evaluate — sometimes
-                unbearably loud — music as noise: this music is a key part of an event they paid to get to, they are
-                mostly likely to be fans of a band playing and, in general, enjoy. Yet, people living near the concert
-                hall might evaluate the same event as noise pollution because it may be loud enough to disturb their
-                working process or attempt to relax, to wake children up or to prevent them from falling asleep.
-                The same loud event is thought of differently due to the contrast of perceptions of those who came
-                to the rock concert voluntarily and those who are forced to witness it.
+                Again, noise pollution is&nbsp;considered to&nbsp;be any&nbsp;unwanted or disturbing sound that affects physical
+                or&nbsp;mental well-being of&nbsp;a&nbsp;person. Not&nbsp;every sound is&nbsp;polluting, as&nbsp;noise has&nbsp;a&nbsp;psychological component
+                — circumstances that make the&nbsp;sound unwanted. Negative mental effect, which&nbsp;noise has,
+                originates from&nbsp;person’s perception of&nbsp;what&nbsp;is&nbsp;being listened and their
+                attitude&nbsp;to&nbsp;the&nbsp;disturbing element of&nbsp;a&nbsp;nature. For&nbsp;instance, people at&nbsp;a&nbsp;rock concert
+                do&nbsp;not&nbsp;evaluate — sometimes unbearably loud — music as&nbsp;noise: this music&nbsp;is
+                a&nbsp;key&nbsp;part of&nbsp;an&nbsp;event they paid&nbsp;to&nbsp;get&nbsp;to, they&nbsp;are
+                mostly likely to&nbsp;be&nbsp;fans of&nbsp;a&nbsp;band playing and, in&nbsp;general, enjoy.
+                Yet, people living near&nbsp;the&nbsp;concert hall might evaluate the&nbsp;same event as&nbsp;noise
+                pollution because it may&nbsp;be&nbsp;loud enough&nbsp;to&nbsp;disturb their&nbsp;working process
+                or&nbsp;attempt to&nbsp;relax, to&nbsp;wake children up or to&nbsp;prevent them from&nbsp;falling asleep.
+                The&nbsp;same loud event is&nbsp;thought&nbsp;of differently due&nbsp;to the&nbsp;contrast of&nbsp;perceptions
+                of&nbsp;those who came to&nbsp;the&nbsp;rock concert voluntarily and those who&nbsp;are forced to&nbsp;witness&nbsp;it.
             </p>
             <p>
-                Sounds that reach 85 decibels or higher can harm a person’s hearing. Yet, they appear on a daily basis:
-                lawn movers buzz at a volume of 65-95 decibels in every park during from
-                late spring until early autumn, subway trains arrive at a station with a sound may exceed 100 decibels,
-                neighbors electric drill tries to break though the wall at 95 decibels… In a short run loud sounds
-                can lead to temporary hearing loss, while long-term consequences of noise pollution may affect both
-                physical and mental well-being of a person, beyond hearing.
+                Sounds that reach 85&nbsp;decibels or higher can harm person’s hearing. Yet, they appear on&nbsp;a&nbsp;daily basis:
+                lawn movers buzz at&nbsp;a&nbsp;volume of&nbsp;65-95&nbsp;decibels in&nbsp;every park from&nbsp;late spring
+                until&nbsp;early autumn, subway trains arrive at&nbsp;a&nbsp;station with&nbsp;a&nbsp;sound may exceed 100&nbsp;decibels,
+                neighbors' electric drill tries to&nbsp;break though&nbsp;the&nbsp;wall at&nbsp;95&nbsp;decibels…
+                In&nbsp;a&nbsp;short run loud sounds can lead&nbsp;to temporary hearing&nbsp;loss, while long-term
+                consequences of&nbsp;noise pollution may affect both&nbsp;physical and&nbsp;mental well-being of&nbsp;a&nbsp;person, beyond hearing.
             </p>
             <p>
-                Back in 2011, WHO published summarized evidence on the relationship between environmental noise and
-                health effects, indicating that noise pollution leads to annoyance, sleep disturbance and
-                cardiovascular disease. Authors used Disability-Adjusted Life Year (DALY) to evaluate the affect
-                of noise on West Europeans’ health.
-            </p>
-            <blockquote>
-                DALY is a special metric that allows to compare the consequences of different disease on human life.
-                Calculated as Years of Life Lost (YLL) +  Years Lived with Disability (YLD), it shows how many years
-                human or society loses due to diseases, injuries or unfavorable environmental factors.
-            </blockquote>
-            PUT GRAPH HERE
-            <p>
-                Sleep disturbance is the most crucial consequence of noise pollution, as it leads to 903 thousands
-                of DALY yearly. Human auditory system has a watchman function that constantly monitors the environment
-                for threats, even during the sleep period. When the noise penetrates into bedroom, it postpones the
-                moment a person falls asleep, can wake them up during the night and can prevent the blood pressure
-                from going down during the night. All these micro-awakening, leading to fragmented sleep structure,
-                and organism reactions to the general stress result in deterioration in sleep quality. Simply,
-                next morning one can wake up already feeling exhausted.
-            </p>
-            <p>
-                Annoyance, even though it is hardly measurable in quantitative research, is noted as the second most
-                significant affect of noise pollution. Every year about 654 thousands of DALY are caused by it,
-                affecting the majority of population and driving them into additional stress.
-            </p>
-            <p>
-                Traffic noise, especially in the early morning, can increase the probability of coronary heart disease
-                and hypertension, leading to 61 thousands DALY yearly. Noise, which is impossible to turn off or to
-                control in any other way, is a stress for a person — in response to it, body excretes stress hormones
-                that lead to changes in the composition of blood. This and other factors, as studies show, in some
-                cases lead to high blood pressure, heart attacks and stroke.
-            </p>
-            <p>
-                Exposed near schools or living areas, traffic noise affects the cognitive functions of children and
-                impairs their concentration and memory, affecting thousands of children aged 4-19 and resulting in 45
-                thousands of DALY. Other studies have found that children who attend schools in noise areas are more
-                likely to lag behind their peers in academic performance.
+                Back&nbsp;in&nbsp;2011, WHO published summarized evidence on&nbsp;the&nbsp;relationship between environmental noise
+                and&nbsp;health effects, indicating that noise pollution leads&nbsp;to annoyance, sleep disturbance
+                and&nbsp;cardiovascular disease. Authors used Disability-Adjusted Life Year (DALY) to&nbsp;evaluate the&nbsp;affect
+                of&nbsp;noise on&nbsp;West Europeans’ health.
             </p>
             <blockquote>
-                In total noise pollution steals more than a 1 million years of healthy life from Western Europeans
-                every year.
+                DALY is&nbsp;a&nbsp;special metric that allows to&nbsp;compare the&nbsp;consequences of&nbsp;different disease on&nbsp;human life.
+                Calculated as Years&nbsp;of&nbsp;Life&nbsp;Lost&nbsp;(YLL) + Years&nbsp;Lived&nbsp;with&nbsp;Disability&nbsp;(YLD), it&nbsp;shows how&nbsp;many years
+                human or society loses due&nbsp;to diseases, injuries or unfavorable environmental factors.
+            </blockquote>
+            <div>
+                PUT GRAPH HERE
+            </div>
+            <p>
+                Sleep disturbance is&nbsp;the&nbsp;most crucial consequence of&nbsp;noise pollution, as it leads to&nbsp;903&nbsp;thousands
+                of&nbsp;DALY yearly. Human auditory system has&nbsp;a&nbsp;watchman function that constantly monitors the&nbsp;environment
+                for&nbsp;threats, even during&nbsp;the&nbsp;night. When the&nbsp;noise penetrates into&nbsp;bedroom, it&nbsp;postpones
+                the&nbsp;moment person falls asleep, can wake them up during the&nbsp;night or prevent the&nbsp;blood pressure
+                from&nbsp;going down during the&nbsp;night. All&nbsp;these micro-awakening, leading to&nbsp;fragmented sleep structure,
+                and organism reactions to&nbsp;the&nbsp;general stress result in&nbsp;deterioration in&nbsp;sleep quality.
+                Simply, next morning one can wake&nbsp;up already feeling exhausted.
+            </p>
+            <p>
+                Annoyance, even though it is&nbsp;hardly measurable in&nbsp;quantitative research, is&nbsp;noted as&nbsp;the&nbsp;second most
+                significant affect of&nbsp;noise pollution. Every year about&nbsp;654&nbsp;thousands of&nbsp;DALY are&nbsp;caused by&nbsp;it,
+                affecting the&nbsp;majority of&nbsp;population and driving them into&nbsp;additional stress.
+            </p>
+            <p>
+                Traffic noise, especially in&nbsp;the&nbsp;early morning, can&nbsp;increase the&nbsp;probability of&nbsp;coronary heart disease
+                and hypertension, leading to&nbsp;61&nbsp;thousands DALY yearly. Noise, which is&nbsp;impossible to&nbsp;turn&nbsp;off
+                or to&nbsp;control, is a&nbsp;stress for&nbsp;a&nbsp;person — in&nbsp;response to&nbsp;it, body excretes stress hormones
+                that lead&nbsp;to changes in&nbsp;the&nbsp;composition of&nbsp;blood. These&nbsp;and&nbsp;other factors, as&nbsp;studies show,
+                in&nbsp;some cases lead to&nbsp;high blood pressure, heart attacks and stroke.
+            </p>
+            <p>
+                Exposed near&nbsp;schools or&nbsp;living areas, traffic noise affects the&nbsp;cognitive functions of&nbsp;children
+                and&nbsp;impairs their concentration and&nbsp;memory, affecting thousands of&nbsp;children aged&nbsp;4-19 and resulting&nbsp;in
+                45&nbsp;thousands of&nbsp;DALY. Other studies have found that children who attend schools in&nbsp;noisy areas
+                are&nbsp;more&nbsp;likely to&nbsp;lag&nbsp;behind their peers in&nbsp;academic performance.
+            </p>
+            <blockquote>
+                In&nbsp;total noise pollution steals more&nbsp;than&nbsp;1&nbsp;million&nbsp;years of&nbsp;healthy life
+                from&nbsp;Western Europeans every&nbsp;year.
             </blockquote>
             <p>
-                The problem of noise regulations lays in the fact that many of the activities that generate noise also
-                generate revenue, and the economics would fail, if strict noise regulations are applied.
+                The&nbsp;problem&nbsp;of&nbsp;noise regulations lays in&nbsp;the&nbsp;fact that many&nbsp;of&nbsp;the&nbsp;activities
+                that generate noise also generate revenue, and economics would&nbsp;fail, if&nbsp;strict noise regulations are&nbsp;applied.
             </p>
             <p>
-                In 2022, WHO released the target levels of exposure from the most crucial sources of noise.
-                The suggested regulations are divided in national and community level of implementation,
-                indicating that both government and society should address the noise pollution to improve the sound
-                environment. On the one side, the politicians need to introduce new regulations and support the
-                infrastructure development; on the other side, businesses and civilians should participate in
-                technological progress, inventing new ways to lower the sound of most used devices and items,
-                such as transport and household items, so that in general the environment would become quieter.
+                In&nbsp;2022, WHO released the&nbsp;target levels of&nbsp;exposure from&nbsp;the&nbsp;most&nbsp;crucial sources of&nbsp;noise.
+                The suggested regulations are&nbsp;divided in&nbsp;national and&nbsp;community level of&nbsp;implementation,
+                indicating that both&nbsp;government and&nbsp;society should address the&nbsp;noise pollution to&nbsp;improve
+                the&nbsp;sound environment. On&nbsp;the&nbsp;one&nbsp;hand, the&nbsp;politicians need to&nbsp;introduce new&nbsp;regulations
+                and support the&nbsp;infrastructure development; on&nbsp;the&nbsp;other&nbsp;hand, businesses and civilians should
+                participate in&nbsp;technological progress, inventing new&nbsp;ways to&nbsp;lower the&nbsp;sound of&nbsp;most&nbsp;used
+                devices and items, such&nbsp;as&nbsp;transport and household items, so that the&nbsp;environment would&nbsp;become quieter.
             </p>
             <p>
-                Some of the recommendations seem hardly achievable in modern densely built-up cities as they require
-                a major infrastructure redesign. Yet, as Moscow’s history shows, even the airport removal — which is
-                a option of flight paths rearranging — is possible. The decision to build an airport on Khodynka Field,
-                in the north area of a city, was made in 1910 — at the very dawn of aviation era —
-                by the Aeronautics Society and the Moscow
-                Military District. In 1922, after serving its first civil flight from Moscow to Königsberg, the airport
-                became international and kept this status until the plane crash in 1935. Since then, only the service
-                and tests flights were conducted on the spot. Still, planes took off and landed within the city boarders,
-                exposing noise of more than 100 decibels[^noise-awareness-day-levels]. However, the airport remained
-                the center of aircraft construction and development, as numerous research and design organizations
-                were located nearby. The final decision to get rid of an airport was made only in 2003.
-                After a decade of unknown status, the area gained local authorities’ interest. By now, the airport
-                building has beed replaced with Aviapark — the biggest shopping mall in Europe, landing strips have
-                been erased and replaced with a recreation area.
+                Some&nbsp;recommendations seem hardly&nbsp;applicable in&nbsp;modern densely built-up cities as&nbsp;they require
+                a&nbsp;major infrastructure redesign. Yet, as&nbsp;Moscow’s history shows, even the&nbsp;airport
+                removal — which is&nbsp;an&nbsp;option of&nbsp;flight paths rearranging — is&nbsp;possible.
+            </p>
+            <p>
+                The decision to&nbsp;build an&nbsp;airport on&nbsp;Khodynka&nbsp;Field, in&nbsp;the&nbsp;north area
+                of&nbsp;a&nbsp;city, was&nbsp;made in&nbsp;1910 — at&nbsp;the&nbsp;very&nbsp;dawn of&nbsp;aviation era —
+                by&nbsp;the&nbsp;Aeronautics Society and the&nbsp;Moscow Military District.
+                In&nbsp;1922, after&nbsp;serving its&nbsp;first civil flight from&nbsp;Moscow to&nbsp;Königsberg, the&nbsp;airport
+                became international and kept this&nbsp;status until&nbsp;the&nbsp;plane crash in&nbsp;1935.
+                Since&nbsp;then, only the&nbsp;service and test flights were&nbsp;conducted on&nbsp;the&nbsp;spot.
+                Still, planes took&nbsp;off and landed within&nbsp;the&nbsp;city boarders,
+                exposing noise of&nbsp;more&nbsp;than&nbsp;100&nbsp;decibels. However, the&nbsp;airport remained
+                the&nbsp;center of&nbsp;aircraft construction and development, as&nbsp;numerous research
+                and&nbsp;design organizations were&nbsp;located&nbsp;nearby. The&nbsp;final decision
+                to&nbsp;get&nbsp;rid&nbsp;of&nbsp;an&nbsp;airport was&nbsp;made only&nbsp;in&nbsp;2003.
+                After a&nbsp;decade of&nbsp;unknown status, the&nbsp;area gained local authorities’ interest.
+                By&nbsp;now, the&nbsp;airport building has&nbsp;beed replaced with&nbsp;Aviapark —
+                the&nbsp;biggest shopping mall in&nbsp;Europe, landing strips have&nbsp;been&nbsp;erased
+                and replaced with&nbsp;a&nbsp;recreation area.
             </p>
         </div>
     )

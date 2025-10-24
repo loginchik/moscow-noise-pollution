@@ -1,36 +1,45 @@
 const IntroductionContainer = () => {
     return (
         <div>
+            <h1>The Sound That&nbsp;Never&nbsp;Sleeps</h1>
             <p>
-                I am 22 years old now, and only recently I realized that all these years
-                I have been living in a constant noise.
+                I am 22&nbsp;years old now, and only recently I realized that all&nbsp;these years
+                I have been living in&nbsp;a&nbsp;constant noise.
             </p>
             <p>
-                As a child, I used to live near the airport, and everyday I watched and heard planes landing.
-                They flew just above the building, including the one I lived in, and looked like giant birds
-                targeting their nest. Needless to say that I was mostly amused with them. Meanwhile, my town
-                was growing. When I was five, my area was the outskirts. By the time I became ten, my area got
-                surrounded by new buildings that enlarged the town approximately by a third. It all happened in
-                a blink of an eye (as it seemed to me) or in a few years of pile driving, escalators operating
-                and dump trucks unloading (as it truly was). As a teenager, I mostly ignored these processes
-                and noise — I was busy with my own challenges.
+                As a&nbsp;child, I used to&nbsp;live near the&nbsp;airport, and&nbsp;everyday I watched and&nbsp;heard planes landing.
+                They flew just above the&nbsp;buildings, including the&nbsp;one I lived&nbsp;in, and&nbsp;looked like giant birds
+                targeting their&nbsp;nest. Needless to&nbsp;say that I&nbsp;was mostly amused with&nbsp;them. Meanwhile, my&nbsp;town
+                was growing. When I&nbsp;was five, my&nbsp;area was the&nbsp;outskirts. By&nbsp;the&nbsp;time I became ten, my&nbsp;area got
+                surrounded by&nbsp;new&nbsp;buildings that enlarged the&nbsp;town approximately by&nbsp;a&nbsp;third. It all happened
+                in&nbsp;a&nbsp;blink of&nbsp;an&nbsp;eye (as it seemed to&nbsp;me) or in&nbsp;a&nbsp;few years of&nbsp;pile driving,
+                escalators operating and&nbsp;dump trucks unloading (as it truly&nbsp;was). As a&nbsp;teenager, I mostly ignored these&nbsp;processes
+                and&nbsp;noise — I was&nbsp;busy with&nbsp;my&nbsp;own challenges.
+            </p>
+            <div>
+                <img src="https://images.unsplash.com/photo-1497526944666-aa127bb44809?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1654"
+                />
+                <p>
+                    Airplane flying over&nbsp;the&nbsp;building — Sasha Lebedeva / <a href="https://unsplash.com/photos/airplane-flying-over-the-building-rYYDylAyKzo" target="_blank" rel="noreferrer">Unsplash</a>
+                </p>
+            </div>
+            <p>
+                Studying at&nbsp;university, I moved to&nbsp;Moscow. Even&nbsp;though I live near&nbsp;the&nbsp;Leningradskoe highway,
+                which heads to&nbsp;Sheremetyevo airport, planes do&nbsp;not either&nbsp;amuse or&nbsp;bother me&nbsp;anymore:
+                they are&nbsp;prohibited to&nbsp;enter Moscow’s&nbsp;space. However, building processes are&nbsp;still present:
+                new&nbsp;offices are being&nbsp;built just next&nbsp;to&nbsp;my&nbsp;apartment block, so, every day I&nbsp;have a&nbsp;‘pleasure’ to&nbsp;wake&nbsp;up
+                with&nbsp;trucks beeping and piles driving, just&nbsp;as&nbsp;I used to&nbsp;do at&nbsp;my&nbsp;hometown. Moreover, new&nbsp;sounds
+                of&nbsp;urban nature occurred. Though Leningradskoe highway is&nbsp;a&nbsp;few blocks away,
+                car noise manages to&nbsp;cover this&nbsp;distance. Needless to&nbsp;say that some&nbsp;of&nbsp;my&nbsp;neighbors have dogs barking,
+                others adore night parties, and some strangers on&nbsp;the&nbsp;street are constantly loosing each&nbsp;other and
+                shout to&nbsp;meet&nbsp;back.
             </p>
             <p>
-                Studying at university, I moved to Moscow. Even though I live near the Leningradskoe highway,
-                which heads to Sheremetyevo airport, planes do not either amuse or bother my anymore: they are
-                prohibited to enter Moscow’s space. However, building processes are still present: new offices
-                are being built just next to my apartment block, so, every day I have a ‘pleasure’ to wake up
-                with trucks beeping and piles driving, just as I used to do at my hometown. Moreover, new sounds
-                of urban nature occurred. Though Leningradskoe highway is a few blocks away from my opened window,
-                car noise manages to cover this distance. Needless to say that some of my neighbors have dogs barking,
-                others adore night parties, and some strangers on the street are constantly loosing each other and
-                shout to meet back.
-            </p>
-            <p>
-                That is just one story of a person who lives in an urban area, and it shows that noise is everywhere.
-                In own modern world silence becomes a rare commodity now, and that is not beneficial for a human
-                physical and mental well-being. A situation when sounds of surrounding nature start bothering,
-                irritate or disturb, not matter how loud and irritating they are, is a <strong>noise pollution</strong>.
+                That is&nbsp;just one&nbsp;story of&nbsp;a&nbsp;person who&nbsp;lives in&nbsp;an&nbsp;urbanized area, and it&nbsp;shows
+                that noise&nbsp;is&nbsp;everywhere. In&nbsp;our&nbsp;modern world silence becomes a&nbsp;rare&nbsp;commodity,
+                and that is&nbsp;not&nbsp;beneficial for&nbsp;a&nbsp;human physical and mental well-being.
+                A&nbsp;situation when sounds of&nbsp;surrounding nature start bothering, irritate or disturb,
+                no&nbsp;matter how&nbsp;loud and&nbsp;irritating they&nbsp;are, is&nbsp;a&nbsp;<strong>noise pollution</strong>.
             </p>
         </div>
     )

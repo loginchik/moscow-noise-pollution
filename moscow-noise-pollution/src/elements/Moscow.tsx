@@ -5,82 +5,94 @@ const MoscowContainer = () => {
                 Moscow never sleeps
             </h2>
             <p>
-                The Khodynka airport would be hardly possible to function in accordance with modern Moscow’s law of
-                silence as it protects citizens against disturbance of their piece and quiet. The general rule it
-                that it is prohibited to expose loud sounds in living areas, hospitals, hotels and other resting areas,
-                near schools during the night — from 11 p.m till 7 a.m, — at weekends and on holidays.
-                The forbidden actions include playing musical instruments, turning on high volume on TV, shouting,
-                use of pyrotechnics, repair, construction, loading and unloading works. Additionally, the law prohibits
-                repair works from 1 p.m. until 3 p.m. and from 7 p.m. until 9 a.m.
+                The&nbsp;Khodynka&nbsp;airport would&nbsp;be hardly possible to&nbsp;function in&nbsp;accordance
+                with&nbsp;modern Moscow’s law&nbsp;of&nbsp;silence as&nbsp;it&nbsp;protects citizens against
+                disturbance&nbsp;of&nbsp;their piece and quiet. The&nbsp;general rule is&nbsp;that it is&nbsp;prohibited
+                to&nbsp;expose loud sounds in&nbsp;living areas, hospitals, hotels and other&nbsp;resting areas,
+                near&nbsp;schools during&nbsp;the&nbsp;night — from&nbsp;11&nbsp;p.m. until&nbsp;7&nbsp;a.m, —
+                at&nbsp;weekends and on&nbsp;holidays.
+                The&nbsp;forbidden actions include playing musical instruments, turning&nbsp;on high&nbsp;volume on&nbsp;TV,
+                shouting, use&nbsp;of&nbsp;pyrotechnics, repair, construction, loading and unloading works.
+                Additionally, the&nbsp;law&nbsp;prohibits repair works from&nbsp;1&nbsp;p.m. until&nbsp;3&nbsp;p.m.
+                and from&nbsp;7&nbsp;p.m. until&nbsp;9&nbsp;a.m.
             </p>
-            <details>
+            <details open={true}>
                 <summary>About the data</summary>
                 <p>
-                    The key source are the results of noise level monitoring on data from mobile environmental
-                    laboratories, which is publicly available on the Moscow government open data portal.
-                    This data contains result of noise level monitoring that has been conducted in response
-                    to citizens complains about the noise.
+                    The&nbsp;key&nbsp;source is&nbsp;the&nbsp;results of&nbsp;noise level monitoring on&nbsp;data from&nbsp;mobile environmental
+                    laboratories, which&nbsp;is&nbsp;publicly available on&nbsp;the&nbsp;Moscow government open&nbsp;data portal.
+                    This&nbsp;data contains results&nbsp;of&nbsp;noise level monitoring that have&nbsp;been&nbsp;conducted in&nbsp;response
+                    to&nbsp;citizens complains&nbsp;about the&nbsp;noise.
                 </p>
             </details>
             <p>
-                In 2024, Muscovites reported on the noise 865 times in total, and 214 times of them were proved by
-                the mobile monitoring results. By the end of August, this year citizens complained about the noise
-                771 times in total (64% percents more than previous year), and same 214 times were proved violating
-                noise regulations by the mobile monitoring results.
+                In&nbsp;2024, Muscovites reported&nbsp;on the&nbsp;noise 865&nbsp;times in&nbsp;total,
+                and 214&nbsp;times of&nbsp;them were&nbsp;proved by&nbsp;the&nbsp;mobile monitoring results.
+                By&nbsp;the&nbsp;end&nbsp;of&nbsp;August, in&nbsp;2025, citizens complained about&nbsp;the&nbsp;noise
+                771&nbsp;times in&nbsp;total (64%&nbsp;percents more&nbsp;than during&nbsp;the&nbsp;same period in&nbsp;2024),
+                and 214&nbsp;reports were&nbsp;proved violating noise regulations by&nbsp;the&nbsp;mobile monitoring results.
             </p>
             <p>
-                The most frequent noise reason that dominates in both periods is construction work. In 2025, citizens
-                complained about the loud sounds coming from the construction sites 533 times. 30% of the monitoring
-                results recorded the noise regulations violations, 38% disapproved the complains and in remaining 32%
-                cases mobile monitoring did not manage to locate the noise source (and to evaluate the level of noise
-                it exposes) as it was not present on the spot at the time monitoring arrived.
+                The&nbsp;most&nbsp;frequent noise reason that&nbsp;dominates in&nbsp;both periods is&nbsp;construction work.
+                In&nbsp;2025, citizens complained about&nbsp;the&nbsp;loud&nbsp;sounds coming from&nbsp;the&nbsp;construction
+                sites 533&nbsp;times. 30%&nbsp;of&nbsp;the&nbsp;monitoring results recorded the&nbsp;noise&nbsp;regulations violations,
+                38%&nbsp;disapproved the&nbsp;reports, while in&nbsp;remaining 32%&nbsp;of&nbsp;cases mobile monitoring did&nbsp;not
+                manage&nbsp;to&nbsp;locate the&nbsp;noise source (and, consequently, to&nbsp;evaluate the&nbsp;level of&nbsp;noise
+                it&nbsp;exposes) as&nbsp;it was&nbsp;not&nbsp;present on&nbsp;the&nbsp;spot at&nbsp;the&nbsp;moment monitoring arrived.
             </p>
             <p>
-                Other top reasons to report the noise are
+                Other frequent reasons to&nbsp;report the&nbsp;noise&nbsp;are
             </p>
             <ul>
                 <li>
-                    generator sets: 63 reports by the end of August, 53% of monitoring attempts did not manage
-                    to locate the noise source,
+                    generator sets: 63&nbsp;reports by&nbsp;the&nbsp;end&nbsp;of&nbsp;August, 53%&nbsp;of&nbsp;monitoring
+                    attempts did&nbsp;not manage&nbsp;to&nbsp;locate the&nbsp;noise source,
                 </li>
                 <li>
-                    loading and unloading operations: 41 times, 87% of monitoring attempts did not manage
-                    to locate the noise source,
+                    loading and unloading operations: 41&nbsp;times, 87%&nbsp;of&nbsp;monitoring
+                    attempts did&nbsp;not manage&nbsp;to&nbsp;locate the&nbsp;noise source,
                 </li>
                 <li>
-                    road repair works: 25 times, 92% of monitoring attempts did not manage to locate the noise source,
+                    road repair works: 25&nbsp;times, 92%&nbsp;of&nbsp;monitoring
+                    attempts did&nbsp;not manage&nbsp;to&nbsp;locate the&nbsp;noise source,
                 </li>
                 <li>
-                    motor transport noise: 21 times,  90% of mobile monitoring results proved noise regulations
-                    violation,
+                    motor transport noise: 21&nbsp;times, 90%&nbsp;of&nbsp;mobile monitoring results proved
+                    noise regulations violation,
                 </li>
                 <li>
-                    other repair works: 16 times, 88% of monitoring attempts did not manage to locate the noise source,
-                    none of results proved the violations,
+                    other repair works: 16&nbsp;times, 88%&nbsp;of&nbsp;monitoring
+                    attempts did&nbsp;not manage&nbsp;to&nbsp;locate the&nbsp;noise source,
+                    none&nbsp;of&nbsp;results proved the&nbsp;violations,
                 </li>
                 <li>
-                    railway transport: 6 times, 67% of monitoring results proved noise regulations violation.
+                    railway transport: 6&nbsp;times, 67%&nbsp;of&nbsp;monitoring results proved noise regulations violation.
                 </li>
             </ul>
             <p>
-                Even though most of the noise reports, which were proved by the mobile monitoring in 2025, came from
-                eastern and south-eastern areas of Moscow, the pollutants spill all around the city. Explore them mapped:
+                Even though most&nbsp;of&nbsp;the&nbsp;noise reports, which were&nbsp;proved by&nbsp;the&nbsp;mobile monitoring
+                in&nbsp;2025, came from&nbsp;eastern and&nbsp;south-eastern areas&nbsp;of&nbsp;Moscow,
+                the&nbsp;pollutants spill all&nbsp;around the&nbsp;city. Explore them mapped:
             </p>
-            PUT THE MAP HERE
+            <div>
+                PUT THE MAP HERE
+            </div>
             <p>
-                Some of noise sources are temporary. For instance, construction site or road repair spot, same as
-                cultural events and sports matches, may expose extremely loud sounds, but disappear as soon as the
-                construction or repair is finished.
+                Some&nbsp;of&nbsp;noise sources are&nbsp;temporary. For&nbsp;instance, construction site or road repair spot,
+                similarly&nbsp;as&nbsp;cultural events and sports matches, may&nbsp;expose extremely loud&nbsp;sounds,
+                but&nbsp;disappear as&nbsp;soon as&nbsp;the&nbsp;construction or&nbsp;event is&nbsp;finished.
             </p>
             <p>
-                In contrast, motor traffic, railway transport, manufactory, airplanes or underground are hard to
-                relocate — to address these noise pollutants, local authorities need to adapt the existing regulations.
-                Noteworthy, Moscow legislation complies with WHO recommendations. Trucks are strictly limited to
-                enter the city during the day. The overall speed of motor traffic in the center of the city is lowered
-                by 50 kilometers per hour; though the measure addresses the accident rate, it also reduces
-                the noise pollution in the area. In February, local authorities announced a major noise reduction
-                barriers repair — such constructions absorb the sound coming from the traffic, making the environment
-                quieter in the guarded area.
+                In&nbsp;contrast, motor traffic, railway transport, manufactory, airplanes or subway are&nbsp;hard
+                to&nbsp;relocate — to&nbsp;address these&nbsp;noise pollutants, local authorities need to&nbsp;adapt
+                the&nbsp;existing regulations. Noteworthy, Moscow legislation complies with&nbsp;WHO recommendations.
+                Trucks are strictly&nbsp;limited to&nbsp;enter the&nbsp;city during&nbsp;the&nbsp;day.
+                The&nbsp;overall speed&nbsp;of&nbsp;motor traffic in&nbsp;the&nbsp;center of&nbsp;the&nbsp;city is&nbsp;lowered
+                by&nbsp;50&nbsp;kilometers&nbsp;per&nbsp;hour; though the&nbsp;measure primarily addresses the&nbsp;accident rate,
+                it&nbsp;also reduces the&nbsp;noise pollution in&nbsp;the&nbsp;area.
+                In&nbsp;February, local authorities announced a&nbsp;major noise&nbsp;reduction barriers repair —
+                such&nbsp;constructions absorb the&nbsp;sound coming from&nbsp;the&nbsp;traffic, making the&nbsp;environment
+                in&nbsp;the&nbsp;guarded area quieter.
             </p>
         </div>
     )
