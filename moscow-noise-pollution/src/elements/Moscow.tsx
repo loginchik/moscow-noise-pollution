@@ -98,11 +98,12 @@ const MoscowContainer = () => {
                 In&nbsp;contrast, motor traffic, railway transport, manufactory, airplanes or subway are&nbsp;hard
                 to&nbsp;relocate — to&nbsp;address these&nbsp;noise pollutants, local authorities need to&nbsp;adapt
                 the&nbsp;existing regulations. Noteworthy, Moscow legislation complies with&nbsp;WHO recommendations.
-                Trucks are strictly&nbsp;limited to&nbsp;enter the&nbsp;city during&nbsp;the&nbsp;day.
-                The&nbsp;overall speed&nbsp;of&nbsp;motor traffic in&nbsp;the&nbsp;center of&nbsp;the&nbsp;city is&nbsp;lowered
-                by&nbsp;50&nbsp;kilometers&nbsp;per&nbsp;hour; though the&nbsp;measure primarily addresses the&nbsp;accident rate,
+                Trucks are <a href="https://www.mos.ru/otvet-transport/kak-oformit-propusk-dlya-gruzovogo-transporta" target="_blank" rel="noreferrer">strictly&nbsp;limited</a> to&nbsp;enter the&nbsp;city during&nbsp;the&nbsp;day.
+                The&nbsp;overall speed&nbsp;of&nbsp;motor traffic in&nbsp;the&nbsp;center of&nbsp;the&nbsp;city
+                is&nbsp;<a href="https://transport.mos.ru/mostrans/all_news/110799" target="_blank" rel="noreferrer">lowered</a> by&nbsp;50&nbsp;kilometers&nbsp;per&nbsp;hour;
+                though the&nbsp;measure primarily addresses the&nbsp;accident rate,
                 it&nbsp;also reduces the&nbsp;noise pollution in&nbsp;the&nbsp;area.
-                In&nbsp;February, local authorities announced a&nbsp;major noise&nbsp;reduction barriers repair —
+                In&nbsp;February, local authorities <a href="https://www.mos.ru/news/item/150341073" target="_blank" rel="noreferrer">announced</a> a&nbsp;major noise&nbsp;reduction barriers repair —
                 such&nbsp;constructions absorb the&nbsp;sound coming from&nbsp;the&nbsp;traffic, making the&nbsp;environment
                 in&nbsp;the&nbsp;guarded area quieter.
             </p>

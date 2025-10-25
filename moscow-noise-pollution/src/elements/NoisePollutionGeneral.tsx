@@ -112,8 +112,8 @@ const NoisePollutionGeneralContainer = () => {
             </p>
             <p>
                 Some&nbsp;recommendations seem hardly&nbsp;applicable in&nbsp;modern densely built-up cities as&nbsp;they require
-                a&nbsp;major infrastructure redesign. Yet, as&nbsp;Moscow’s history shows, even the&nbsp;airport
-                removal — which is&nbsp;an&nbsp;option of&nbsp;flight paths rearranging — is&nbsp;possible.
+                a&nbsp;major infrastructure redesign. Yet, as&nbsp;Moscow’s history shows, even the&nbsp;<a href="https://realty.rbc.ru/news/5ce41ae29a7947b5cfbff9ec" target="_blank" rel="noreferrer">airport
+                removal</a> — which is&nbsp;an&nbsp;option of&nbsp;flight paths rearranging — is&nbsp;possible.
             </p>
             <p>
                 The decision to&nbsp;build an&nbsp;airport on&nbsp;Khodynka&nbsp;Field, in&nbsp;the&nbsp;north area
