@@ -9,7 +9,7 @@ const MoscowContainer = () => {
     return (
         <div>
             <h2>
-                Moscow never sleeps
+                Moscow never takes a&nbsp;break
             </h2>
             <p>
                 The&nbsp;Khodynka&nbsp;airport would&nbsp;be hardly possible to&nbsp;function in&nbsp;accordance
