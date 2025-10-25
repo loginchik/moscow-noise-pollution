@@ -1,5 +1,9 @@
-import {Disclosure, DisclosureButton, DisclosurePanel} from "@headlessui/react";
+import {Checkbox, Disclosure, DisclosureButton, DisclosurePanel} from "@headlessui/react";
 import {clsx} from "clsx";
+import {Circle, LayerGroup, MapContainer, Popup, TileLayer} from "react-leaflet";
+import * as mapData from "../assets/map-data.json";
+import {useEffect, useState} from "react";
+
 
 const MoscowContainer = () => {
     return (
@@ -84,9 +88,7 @@ const MoscowContainer = () => {
                 in&nbsp;2025, came from&nbsp;eastern and&nbsp;south-eastern areas&nbsp;of&nbsp;Moscow,
                 the&nbsp;pollutants spill all&nbsp;around the&nbsp;city. Explore them mapped:
             </p>
-            <div>
-                PUT THE MAP HERE
-            </div>
+            <NoiseReportsMapContainer />
             <p>
                 Some&nbsp;of&nbsp;noise sources are&nbsp;temporary. For&nbsp;instance, construction site or road repair spot,
                 similarly&nbsp;as&nbsp;cultural events and sports matches, may&nbsp;expose extremely loud&nbsp;sounds,
@@ -109,3 +111,238 @@ const MoscowContainer = () => {
 };
 
 export default MoscowContainer;
+
+
+
+const AVAILABLE_CATEGORIES: string[] = [
+    "Generator set", "Construction work", "Road repair work", "Manufacture",
+    "Show melting spot", "Car wash", "Motor transport", "(Un)loading operation",
+    "Other", "Ventilation system", "Freight transport", "Subway", "Other repair work",
+    "Music", "Railway transport", "Aircraft noise", "Stadium", "Sport ground",
+    "Truck parking", "Mass entertainment event", "Garbage removal", "Car service",
+    "Tram"
+].sort();
+const AVAILABLE_RESULTS: string[] = [ "Violation proved", "No violation detected", "Noise source not located" ];
+
+const NoiseReportsMapContainer = () => {
+    const [filters, setFilters] = useState({
+        categories: [...AVAILABLE_CATEGORIES],
+        results: [...AVAILABLE_RESULTS]
+    });
+
+    function onCategorySwitch(category: string) {
+        if (filters.categories.includes(category)) {
+            setFilters(prev => ({...prev, categories: prev.categories.filter((c: string) => c != category)}))
+        } else {
+            setFilters(prev => ({...prev, categories: [...prev.categories, category]}))
+        }
+    }
+    function onResultSwitch(result: string) {
+        if (filters.results.includes(result)) {
+            setFilters(prev => ({...prev, results: prev.results.filter((r: string) => r != result)}))
+        } else {
+            setFilters(prev => ({...prev, results: [...prev.results, result]}))
+        }
+    }
+
+    return (
+        <div className={clsx('w-full', 'mt-6', 'mb-10', 'flex', 'flex-col', 'gap-4')}>
+            <div className={clsx('w-full', 'h-[60svh]', 'min-h-[300px]')}>
+                <NoiseReportsMap filters={filters}/>
+            </div>
+            <div className={clsx('flex', 'flex-col', 'gap-2')}>
+                <div>
+                    <p className={clsx("mb-0", "font-bold")}>
+                        Result
+                    </p>
+                    <div className={clsx('flex', 'flex-wrap', 'gap-x-3', 'w-full')}>
+                        {AVAILABLE_RESULTS.map((res: string) => (
+                            <div className={clsx('flex', 'flex-row', 'gap-1', 'w-fit', 'items-center')}>
+                                <Checkbox
+                                    checked={filters.results.includes(res)}
+                                    onChange={() => onResultSwitch(res)}
+                                    className={clsx("group", "block", "size-3", "border", "border-gray-500",
+                                        "bg-white", "data-checked:bg-gray-500", "data-checked:border-0")}
+                                >
+                                    <svg className="stroke-white opacity-0 group-data-checked:opacity-100" viewBox="0 0 14 14" fill="none">
+                                        <path d="M3 8L6 11L11 3.5" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" />
+                                    </svg>
+                                </Checkbox>
+                                <p className={'mb-0'}>{res}</p>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+                <div>
+                    <p className={clsx("mb-0", "font-bold")}>
+                        Noise category
+                    </p>
+                    <div className={clsx('flex', 'flex-wrap', 'gap-x-3', 'w-full')}>
+                        {AVAILABLE_CATEGORIES.map((cat: string) => (
+                            <div className={clsx('flex', 'flex-row', 'gap-1', 'w-fit', 'items-center')}>
+                                <Checkbox
+                                    checked={filters.categories.includes(cat)}
+                                    onChange={() => onCategorySwitch(cat)}
+                                    className={clsx("group", "block", "size-3", "border", "border-gray-500",
+                                        "bg-white", "data-checked:bg-gray-500", "data-checked:border-0")}
+                                >
+                                    <svg className="stroke-white opacity-0 group-data-checked:opacity-100" viewBox="0 0 14 14" fill="none">
+                                        <path d="M3 8L6 11L11 3.5" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" />
+                                    </svg>
+                                </Checkbox>
+                                <p className={'mb-0'}>{cat}</p>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+            </div>
+        </div>
+    )
+}
+
+
+const NoiseReportsMap = ({filters}: {filters: any}) => {
+    const [points, setPoints] = useState<object[]>([]);
+    useEffect(() => {
+        const filteredPoints = mapData.features.filter((point => (
+            filters.categories.includes(translateNoiseCategory(point.properties.NoiseCategory[0])) &&
+            filters.results.includes(translateResult(point.properties.ResultsMapped))
+        )));
+        setPoints(filteredPoints);
+    }, [filters]);
+
+    return (
+        <MapContainer
+            // @ts-expect-error:
+            center={[55.650008, 37.566868]}
+            zoom={9}
+            style={{width: '100%', height: '100%'}}
+            minZoom={9}
+            maxZoom={15}
+            maxBounds={[[55.2, 36.85], [55.99, 37.95]]}
+        >
+            <TileLayer
+                url="https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png"
+                // @ts-expect-error:
+                attribution="&copy; CARTO"
+                maxZoom={20}
+                subdomains="abcd"
+            />
+            <LayerGroup>
+                {points.map(point => (
+                    <Circle
+                        // @ts-expect-error:
+                        center={[point.geometry.coordinates[1], point.geometry.coordinates[0]]}
+                        // @ts-expect-error;
+                        radius={35}
+                        stroke={1}
+                        fillOpacity={0.8}
+                        // @ts-expect-error:
+                        color={determineColor(translateResult(point.properties.ResultsMapped))}
+                    >
+                        <Popup>
+                            <p className={clsx('map-popover')}>
+                                {
+                                    //@ts-expect-error:
+                                    processDate(point.properties.Date)
+                                }. {
+                                // @ts-expect-error:
+                                point.properties.NoiseCategory.map((c: string) => translateNoiseCategory(c))
+                            }. {
+                                // @ts-expect-error:
+                                translateResult(point.properties.ResultsMapped)
+                            }
+                            </p>
+                        </Popup>
+                    </Circle>
+                ))}
+            </LayerGroup>
+        </MapContainer>
+    )
+}
+
+function translateResult(result: string): string {
+    switch (result) {
+        case "Превышения нормативов не выявлены":
+            return "No violation detected";
+        case "Выявлены превышения нормативов":
+            return "Violation proved";
+        case "Источник шума не был на месте":
+            return "Noise source not located";
+        default:
+            return "";
+    }
+}
+
+function translateNoiseCategory(category: string): string {
+    switch (category) {
+        case "Генераторная установка":
+            return "Generator set";
+        case "Строительные работы":
+            return "Construction work";
+        case "Дорожно-ремонтные работы":
+            return "Road repair work";
+        case "Промышленное предприятие":
+            return "Manufacture";
+        case "Снегоплавильная установка":
+            return "Show melting spot";
+        case "Автомойка":
+            return "Car wash";
+        case "Автотранспорт":
+            return "Motor transport";
+        case "Погрузочно-разгрузочные работы":
+            return "(Un)loading operation";
+        case "Другие источники":
+            return "Other";
+        case "Вентиляционные системы":
+            return "Ventilation system";
+        case "Грузовой транспорт":
+            return "Freight transport";
+        case "Метрополитен":
+            return "Subway";
+        case "Ремонтные работы":
+            return "Other repair work";
+        case "Музыка":
+            return "Music"
+        case "Шум от работы уборочной техники":
+            return "Cleaning equipment"
+        case "Железнодорожный транспорт":
+            return "Railway transport";
+        case "Авиашум":
+            return "Aircraft noise";
+        case "Стадионы":
+            return "Stadium";
+        case "Спортплощадки":
+            return "Sport ground";
+        case "Стоянка грузовых автомобилей":
+            return "Truck parking"
+        case "Массово-развлекательное мероприятие":
+            return "Mass entertainment event";
+        case "Вывоз мусора":
+            return "Garbage removal";
+        case "Автосервис/шиномонтаж":
+            return "Car service";
+        case "Трамваи":
+            return "Tram";
+        default:
+            return "Other";
+    }
+}
+
+function processDate(date: string): string {
+    const [year, month, day] = date.split("T")[0].split("-");
+    return `${day}/${month}/${year}`;
+}
+
+function determineColor(result: string): string {
+    switch (result) {
+        case "No violation detected":
+            return "#a3a19e";
+        case "Violation proved":
+            return "#171514";
+        case "Noise source not located":
+            return "#5d6b61";
+        default:
+            return "";
+    }
+}
