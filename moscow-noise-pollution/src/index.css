@@ -30,6 +30,12 @@ div#root {
     flex-direction: column;
 }
 
+img {
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+}
+
 .leaflet-attribution-flag {
     display: none !important;
 }
