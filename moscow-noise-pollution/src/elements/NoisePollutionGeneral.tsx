@@ -1,6 +1,19 @@
+import {useEffect, useRef, useState} from "react";
+import {clsx} from "clsx";
+
+
 const NoisePollutionGeneralContainer = () => {
+    const containerRef = useRef(null);
+    const [containerWidth, setContainerWidth] = useState<number>(100);
+    useEffect(() => {
+        if (containerRef.current) {
+            // @ts-expect-error: no property for current
+            setContainerWidth(containerRef.current?.offsetWidth || 100);
+        }
+    }, [containerRef.current]);
+
     return (
-        <div>
+        <div ref={containerRef}>
             <h2>Noise threats</h2>
             <p>
                 Unlike air or&nbsp;water pollution, noise pollution is&nbsp;invisible and in&nbsp;many cases is&nbsp;not&nbsp;even recognized
@@ -33,18 +46,24 @@ const NoisePollutionGeneralContainer = () => {
                 consequences of&nbsp;noise pollution may affect both&nbsp;physical and&nbsp;mental well-being of&nbsp;a&nbsp;person, beyond hearing.
             </p>
             <p>
-                Back&nbsp;in&nbsp;2011, WHO published summarized evidence on&nbsp;the&nbsp;relationship between environmental noise
+                Back&nbsp;in&nbsp;2011, WHO <a href="https://www.who.int/publications/i/item/burden-of-disease-from-environmental-noise-quantification-of-healthy-life-years-lost-in-europe" target="_blank">published</a> summarized
+                evidence on&nbsp;the&nbsp;relationship between environmental noise
                 and&nbsp;health effects, indicating that noise pollution leads&nbsp;to annoyance, sleep disturbance
                 and&nbsp;cardiovascular disease. Authors used Disability-Adjusted Life Year (DALY) to&nbsp;evaluate the&nbsp;affect
                 of&nbsp;noise on&nbsp;West Europeans’ health.
             </p>
             <blockquote>
-                DALY is&nbsp;a&nbsp;special metric that allows to&nbsp;compare the&nbsp;consequences of&nbsp;different disease on&nbsp;human life.
-                Calculated as Years&nbsp;of&nbsp;Life&nbsp;Lost&nbsp;(YLL) + Years&nbsp;Lived&nbsp;with&nbsp;Disability&nbsp;(YLD), it&nbsp;shows how&nbsp;many years
-                human or society loses due&nbsp;to diseases, injuries or unfavorable environmental factors.
+                DALY is&nbsp;a&nbsp;special metric that allows to&nbsp;compare the&nbsp;consequences of&nbsp;different disease on&nbsp;human life
             </blockquote>
-            <div>
-                PUT GRAPH HERE
+            <p>
+                Calculated as a sum of Years&nbsp;of&nbsp;Life&nbsp;Lost&nbsp;(YLL) and Years&nbsp;Lived&nbsp;with&nbsp;Disability&nbsp;(YLD), it&nbsp;shows how&nbsp;many years
+                human or society loses due&nbsp;to diseases, injuries or unfavorable environmental factors.
+            </p>
+            <div className={clsx('my-10', 'max-w-[500px]', 'mx-auto')}>
+                <img src={"./daly-pie-viz.svg"} width={containerWidth} className={clsx("my-4", 'max-h-[80svh]')}/>
+                <p className={clsx('image-caption')}>
+                    Datasource: <a href="https://www.who.int/publications/i/item/burden-of-disease-from-environmental-noise-quantification-of-healthy-life-years-lost-in-europe" target="_blank">WHO — Burden of disease from environmental noise</a>
+                </p>
             </div>
             <p>
                 Sleep disturbance is&nbsp;the&nbsp;most crucial consequence of&nbsp;noise pollution, as it leads to&nbsp;903&nbsp;thousands
@@ -75,14 +94,15 @@ const NoisePollutionGeneralContainer = () => {
             </p>
             <blockquote>
                 In&nbsp;total noise pollution steals more&nbsp;than&nbsp;1&nbsp;million&nbsp;years of&nbsp;healthy life
-                from&nbsp;Western Europeans every&nbsp;year.
+                from&nbsp;Western Europeans every&nbsp;year
             </blockquote>
             <p>
                 The&nbsp;problem&nbsp;of&nbsp;noise regulations lays in&nbsp;the&nbsp;fact that many&nbsp;of&nbsp;the&nbsp;activities
                 that generate noise also generate revenue, and economics would&nbsp;fail, if&nbsp;strict noise regulations are&nbsp;applied.
             </p>
             <p>
-                In&nbsp;2022, WHO released the&nbsp;target levels of&nbsp;exposure from&nbsp;the&nbsp;most&nbsp;crucial sources of&nbsp;noise.
+                In&nbsp;2022, WHO <a href="https://cdn.who.int/media/docs/default-source/who-compendium-on-health-and-environment/who_compendium_noise_01042022.pdf" target="_blank">released</a> the&nbsp;target
+                levels of&nbsp;exposure from&nbsp;the&nbsp;most&nbsp;crucial sources of&nbsp;noise.
                 The suggested regulations are&nbsp;divided in&nbsp;national and&nbsp;community level of&nbsp;implementation,
                 indicating that both&nbsp;government and&nbsp;society should address the&nbsp;noise pollution to&nbsp;improve
                 the&nbsp;sound environment. On&nbsp;the&nbsp;one&nbsp;hand, the&nbsp;politicians need to&nbsp;introduce new&nbsp;regulations

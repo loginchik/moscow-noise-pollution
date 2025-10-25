@@ -1,11 +1,13 @@
+import {clsx} from "clsx";
+
 const IntroductionContainer = () => {
     return (
         <div>
-            <h1>The Sound That&nbsp;Never&nbsp;Sleeps</h1>
-            <p>
-                I am 22&nbsp;years old now, and only recently I realized that all&nbsp;these years
-                I have been living in&nbsp;a&nbsp;constant noise.
-            </p>
+            <h1>The Sound That&nbsp;Never Sleeps</h1>
+            <blockquote>
+                I am 22&nbsp;years old now, and only recently I&nbsp;realized that all&nbsp;these&nbsp;years
+                I&nbsp;have&nbsp;been living in&nbsp;a&nbsp;constant noise
+            </blockquote>
             <p>
                 As a&nbsp;child, I used to&nbsp;live near the&nbsp;airport, and&nbsp;everyday I watched and&nbsp;heard planes landing.
                 They flew just above the&nbsp;buildings, including the&nbsp;one I lived&nbsp;in, and&nbsp;looked like giant birds
@@ -19,7 +21,7 @@ const IntroductionContainer = () => {
             <div>
                 <img src="https://images.unsplash.com/photo-1497526944666-aa127bb44809?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1654"
                 />
-                <p>
+                <p className={clsx('image-caption')}>
                     Airplane flying over&nbsp;the&nbsp;building — Sasha Lebedeva / <a href="https://unsplash.com/photos/airplane-flying-over-the-building-rYYDylAyKzo" target="_blank" rel="noreferrer">Unsplash</a>
                 </p>
             </div>

@@ -1,3 +1,6 @@
+import {Disclosure, DisclosureButton, DisclosurePanel} from "@headlessui/react";
+import {clsx} from "clsx";
+
 const MoscowContainer = () => {
     return (
         <div>
@@ -16,24 +19,32 @@ const MoscowContainer = () => {
                 Additionally, the&nbsp;law&nbsp;prohibits repair works from&nbsp;1&nbsp;p.m. until&nbsp;3&nbsp;p.m.
                 and from&nbsp;7&nbsp;p.m. until&nbsp;9&nbsp;a.m.
             </p>
-            <details open={true}>
-                <summary>About the data</summary>
-                <p>
-                    The&nbsp;key&nbsp;source is&nbsp;the&nbsp;results of&nbsp;noise level monitoring on&nbsp;data from&nbsp;mobile environmental
-                    laboratories, which&nbsp;is&nbsp;publicly available on&nbsp;the&nbsp;Moscow government open&nbsp;data portal.
-                    This&nbsp;data contains results&nbsp;of&nbsp;noise level monitoring that have&nbsp;been&nbsp;conducted in&nbsp;response
-                    to&nbsp;citizens complains&nbsp;about the&nbsp;noise.
-                </p>
-            </details>
             <p>
                 In&nbsp;2024, Muscovites reported&nbsp;on the&nbsp;noise 865&nbsp;times in&nbsp;total,
                 and 214&nbsp;times of&nbsp;them were&nbsp;proved by&nbsp;the&nbsp;mobile monitoring results.
                 By&nbsp;the&nbsp;end&nbsp;of&nbsp;August, in&nbsp;2025, citizens complained about&nbsp;the&nbsp;noise
                 771&nbsp;times in&nbsp;total (64%&nbsp;percents more&nbsp;than during&nbsp;the&nbsp;same period in&nbsp;2024),
                 and 214&nbsp;reports were&nbsp;proved violating noise regulations by&nbsp;the&nbsp;mobile monitoring results.
-            </p>
-            <p>
                 The&nbsp;most&nbsp;frequent noise reason that&nbsp;dominates in&nbsp;both periods is&nbsp;construction work.
+            </p>
+            <div className={clsx('my-10')}>
+                <img src={"./categories-results-2025.svg"} className={clsx('w-full', 'my-4')} />
+                <Disclosure>
+                    <DisclosureButton className={clsx( 'pb-2')}>
+                        [i] About the data
+                    </DisclosureButton>
+                    <DisclosurePanel>
+                        <p className={clsx('text-[0.9em]', 'bg-white', 'shadow-sm', 'p-4')}>
+                            The&nbsp;source is&nbsp;the&nbsp;<a href="https://data.mos.ru/opendata/2449/description?version=1&release=100" target="_blank" rel="noreferrer noopener">results of&nbsp;noise level monitoring</a> on&nbsp;data
+                            from&nbsp;mobile environmental
+                            laboratories, which&nbsp;is&nbsp;publicly available on&nbsp;the&nbsp;Moscow government open&nbsp;data portal.
+                            It&nbsp;contains results&nbsp;of&nbsp;monitoring conducted in&nbsp;response
+                            to&nbsp;citizens complains&nbsp;about the&nbsp;noise.
+                        </p>
+                    </DisclosurePanel>
+                </Disclosure>
+            </div>
+            <p>
                 In&nbsp;2025, citizens complained about&nbsp;the&nbsp;loud&nbsp;sounds coming from&nbsp;the&nbsp;construction
                 sites 533&nbsp;times. 30%&nbsp;of&nbsp;the&nbsp;monitoring results recorded the&nbsp;noise&nbsp;regulations violations,
                 38%&nbsp;disapproved the&nbsp;reports, while in&nbsp;remaining 32%&nbsp;of&nbsp;cases mobile monitoring did&nbsp;not
@@ -45,28 +56,27 @@ const MoscowContainer = () => {
             </p>
             <ul>
                 <li>
-                    generator sets: 63&nbsp;reports by&nbsp;the&nbsp;end&nbsp;of&nbsp;August, 53%&nbsp;of&nbsp;monitoring
-                    attempts did&nbsp;not manage&nbsp;to&nbsp;locate the&nbsp;noise source,
+                    generator sets &rarr; 63&nbsp;reports by&nbsp;the&nbsp;end&nbsp;of&nbsp;August &rarr; 53%&nbsp;of&nbsp;them
+                    did&nbsp;not manage&nbsp;to&nbsp;locate the&nbsp;noise source,
                 </li>
                 <li>
-                    loading and unloading operations: 41&nbsp;times, 87%&nbsp;of&nbsp;monitoring
-                    attempts did&nbsp;not manage&nbsp;to&nbsp;locate the&nbsp;noise source,
+                    loading and unloading operations &rarr; 41&nbsp;times &rarr; 87%&nbsp;of&nbsp;them
+                    did&nbsp;not manage&nbsp;to&nbsp;locate the&nbsp;noise source,
                 </li>
                 <li>
-                    road repair works: 25&nbsp;times, 92%&nbsp;of&nbsp;monitoring
-                    attempts did&nbsp;not manage&nbsp;to&nbsp;locate the&nbsp;noise source,
+                    road repair works &rarr; 25&nbsp;times &rarr; 92%&nbsp;of&nbsp;them
+                    did&nbsp;not manage&nbsp;to&nbsp;locate the&nbsp;noise source,
                 </li>
                 <li>
-                    motor transport noise: 21&nbsp;times, 90%&nbsp;of&nbsp;mobile monitoring results proved
+                    motor transport noise &rarr; 21&nbsp;times &rarr; 90%&nbsp;of&nbsp;them proved
                     noise regulations violation,
                 </li>
                 <li>
-                    other repair works: 16&nbsp;times, 88%&nbsp;of&nbsp;monitoring
-                    attempts did&nbsp;not manage&nbsp;to&nbsp;locate the&nbsp;noise source,
-                    none&nbsp;of&nbsp;results proved the&nbsp;violations,
+                    other repair works &rarr; 16&nbsp;times &rarr; 88%&nbsp;of&nbsp;them did&nbsp;not
+                    manage&nbsp;to&nbsp;locate the&nbsp;noise source, none&nbsp;of&nbsp;results proved the&nbsp;violations,
                 </li>
                 <li>
-                    railway transport: 6&nbsp;times, 67%&nbsp;of&nbsp;monitoring results proved noise regulations violation.
+                    railway transport &rarr; 6&nbsp;times &rarr; 67%&nbsp;of&nbsp;them proved noise regulations violation.
                 </li>
             </ul>
             <p>
